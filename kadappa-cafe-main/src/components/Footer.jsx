@@ -37,7 +37,7 @@ const Footer = () => {
                 </svg>
               </div>
             </a>
-            <a href="https://www.instagram.com/kadappacafe/" target="_blank" rel="noopener noreferrer" style={{color: 'var(--color-tiger-gold)'}}>
+            <a href="https://www.instagram.com/webyoneec/" target="_blank" rel="noopener noreferrer" style={{color: 'var(--color-tiger-gold)'}}>
               <div style={{width: '40px', height: '40px', border: '1px solid var(--color-tiger-gold)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', backgroundColor: 'rgba(255,193,7,0.1)'}}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -62,16 +62,16 @@ const Footer = () => {
 
         {/* Center: Logo & Info */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <img src="/logo.png" alt="Kadappa Cafe" style={{ height: '140px', width: 'auto', marginBottom: '25px' }} />
+          <img src="/logo.png" alt="WEBYONEEC Café" style={{ height: '140px', width: 'auto', marginBottom: '25px' }} />
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '15px' }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{color: 'var(--color-tiger-gold)'}}>
               <path d="M12 2L15 8C15 8 18 8 18 12C18 16 12 20 12 20C12 20 6 16 6 12C6 8 9 8 9 8L12 2Z" fill="currentColor"/>
             </svg>
           </div>
-          <p style={{ fontSize: '12px', letterSpacing: '0.2em', color: '#A0B3A6', textTransform: 'uppercase', marginBottom: '20px' }}>AUTHENTIC SOUTH INDIAN FLAVOURS</p>
+          <p style={{ fontSize: '12px', letterSpacing: '0.2em', color: '#A0B3A6', textTransform: 'uppercase', marginBottom: '20px' }}>GOOD FOOD. GREAT ENERGY.</p>
           
           <p style={{ fontSize: '14px', lineHeight: '1.8', color: 'rgba(160, 179, 166, 0.8)', textAlign: 'center', maxWidth: '350px', marginBottom: '30px', fontStyle: 'italic', fontFamily: "'Playfair Display', serif" }}>
-            "A culinary journey through the heart of South India. Tradition served fresh every single day."
+            "A fresh café experience made for memorable moments."
           </p>
 
           <div style={{ display: 'flex', gap: '20px', fontSize: '12px', letterSpacing: '0.15em' }}>
@@ -104,10 +104,10 @@ const Footer = () => {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '30px', paddingLeft: '51px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#A0B3A6', fontSize: '14px' }}>
-              <Phone size={14} color="var(--color-tiger-gold)" /> +91 98765 43210
+              <Phone size={14} color="var(--color-tiger-gold)" /> Contact details coming soon
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#A0B3A6', fontSize: '14px' }}>
-              <Mail size={14} color="var(--color-tiger-gold)" /> hello@kadappacafe.com
+              <Mail size={14} color="var(--color-tiger-gold)" /> hello@webyoneec.com
             </div>
           </div>
 
@@ -153,13 +153,17 @@ const Footer = () => {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{color: 'var(--color-tiger-gold)'}}>
             <path d="M12 2L15 8C15 8 18 8 18 12C18 16 12 20 12 20C12 20 6 16 6 12C6 8 9 8 9 8L12 2Z" fill="currentColor"/>
           </svg>
-          &copy; 2026 KADAPPA CAFE. ALL RIGHTS RESERVED.
+          &copy; 2026 WEBYONEEC CAFÉ. ALL RIGHTS RESERVED.
         </div>
 
         <div style={{ width: '1px', height: '30px', backgroundColor: 'rgba(255,255,255,0.1)' }}></div>
 
         <div style={{ letterSpacing: '0.15em', color: '#A0B3A6' }}>
-          DOSA &nbsp;&nbsp;|&nbsp;&nbsp; IDLI &nbsp;&nbsp;|&nbsp;&nbsp; FILTER COFFEE
+          FRESH BITES &nbsp;&nbsp;|&nbsp;&nbsp; GOOD VIBES &nbsp;&nbsp;|&nbsp;&nbsp; GREAT COMPANY
+        </div>
+
+        <div style={{ flexBasis: '100%', textAlign: 'center', paddingTop: '18px', marginTop: '10px', borderTop: '1px solid rgba(255,255,255,0.08)', letterSpacing: '0.08em' }}>
+          Made by <a href="https://webyoneec.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-tiger-gold)', textDecoration: 'none', fontWeight: 700 }}>WEBYONEEC</a>
         </div>
 
       </div>
