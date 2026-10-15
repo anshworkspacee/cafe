@@ -58,9 +58,9 @@ const Home = () => {
               Crispy dosas, soft idlis, flavourful vadas and more - made with fresh ingredients and served with authentic South Indian taste.
             </p>
             
-            <button className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', borderRadius: '30px', padding: '12px 28px', fontSize: '14px', pointerEvents: 'auto' }}>
+            <a href="/menu" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', borderRadius: '30px', padding: '12px 28px', fontSize: '14px', pointerEvents: 'auto' }}>
               EXPLORE MENU <span style={{fontSize: '16px'}}>→</span>
-            </button>
+            </a>
           </div>
 
           {/* Right Side: Empty placeholder for sticky Dosa */}
