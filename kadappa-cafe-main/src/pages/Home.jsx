@@ -28,7 +28,7 @@ const Home = () => {
           <div style={{ position: 'sticky', top: '15vh', height: '600px', display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-start', overflow: 'visible', width: '100%', maxWidth: '1440px', margin: '0 auto', paddingLeft: '5%', paddingRight: '5%' }}>
             <motion.img 
               src="/dosa.png" 
-              alt="Kadappa Cafe Dosa"
+              alt="WEBYONEEC Café signature dosa"
               style={{ 
                 width: '110%', 
                 maxWidth: '700px', 
@@ -47,7 +47,7 @@ const Home = () => {
           
           {/* Left Side: Elegant Typography */}
           <div style={{ paddingRight: '20px', zIndex: 2 }}>
-            <div className="text-eyebrow" style={{ color: '#A0B3A6', letterSpacing: '0.2em', fontSize: '13px', marginBottom: '24px' }}>AUTHENTIC SOUTH INDIAN FLAVOURS</div>
+            <div className="text-eyebrow" style={{ color: '#A0B3A6', letterSpacing: '0.2em', fontSize: '13px', marginBottom: '24px' }}>A NEW KIND OF CAFÉ EXPERIENCE</div>
             
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(50px, 6.5vw, 90px)', lineHeight: '1.1', color: '#F4F4F4', marginBottom: '20px', fontWeight: '600' }}>
               Traditional<br/>
@@ -86,7 +86,7 @@ const Home = () => {
               style={{ paddingRight: '40px' }}
             >
               <div className="text-eyebrow" style={{ color: '#A0B3A6', letterSpacing: '0.2em', fontSize: '13px', marginBottom: '16px' }}>
-                AUTHENTIC SOUTH INDIAN FLAVOURS
+                A NEW KIND OF CAFÉ EXPERIENCE
               </div>
               
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(36px, 4vw, 56px)', lineHeight: '1.2', color: '#FFFFFF', marginBottom: '30px', fontWeight: '600' }}>
@@ -94,19 +94,19 @@ const Home = () => {
               </h2>
               
               <p style={{ fontFamily: "system-ui, sans-serif", color: '#E0E0E0', fontSize: '16px', lineHeight: '1.8', marginBottom: '24px' }}>
-                At Kadappa Café, we bring the authentic flavours of South India to your table. From crispy golden dosas and soft idlis to flavourful vadas, wholesome thalis, and traditional filter coffee, every bite celebrates the comfort of South Indian cuisine.
+                At WEBYONEEC Café, every plate brings comfort, flavour and a fresh café experience. From crispy golden dosas and soft idlis to flavourful vadas, wholesome thalis, and traditional filter coffee, every bite celebrates the comfort of South Indian cuisine.
               </p>
               
               <p style={{ fontFamily: "system-ui, sans-serif", color: '#E0E0E0', fontSize: '16px', lineHeight: '1.8', marginBottom: '30px' }}>
-                <strong style={{ color: '#FFFFFF' }}>Established in 2026</strong>, we're here to serve delicious food, warm hospitality, and a memorable dining experience.
+                <strong style={{ color: '#FFFFFF' }}>Made for good moments</strong>, we're here to serve delicious food, warm hospitality, and a memorable dining experience.
               </p>
               
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--color-tiger-gold)', marginBottom: '40px', fontSize: '16px', fontWeight: '500' }}>
-                📍 <span style={{ color: '#FFFFFF' }}>Kalinganagar, Bhubaneswar, Odisha</span>
+                📍 <span style={{ color: '#FFFFFF' }}>Fresh flavours. Good company. Every day.</span>
               </div>
               
               <button className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', borderRadius: '30px', padding: '16px 32px', fontSize: '15px' }}>
-                Discover Our Menu <span style={{fontSize: '18px'}}>→</span>
+                Explore Our Menu <span style={{fontSize: '18px'}}>→</span>
               </button>
             </motion.div>
 
@@ -119,23 +119,16 @@ const Home = () => {
       </div>
 
       <section className="poster-section" style={{textAlign: 'center'}}>
-        <h2 className="text-display" style={{fontSize: 'clamp(50px, 8vw, 100px)', marginBottom: '40px'}}>WATCH US</h2>
+        <h2 className="text-display" style={{fontSize: 'clamp(50px, 8vw, 100px)', marginBottom: '40px'}}>A FEAST FOR THE EYES</h2>
         <div style={{display: 'flex', gap: '50px', justifyContent: 'center', flexWrap: 'wrap'}}>
           {[
-            "https://res.cloudinary.com/asqkllni/video/upload/v1791570798/Video-68969.mp4",
-            "https://res.cloudinary.com/asqkllni/video/upload/v1791570982/Video-87756.mp4",
-            "https://res.cloudinary.com/asqkllni/video/upload/v1791571009/Video-12119.mp4",
-            "https://res.cloudinary.com/asqkllni/video/upload/v1791571071/Video-20911.mp4"
-          ].map((src, idx) => (
-            <div key={idx} className="surface-card" style={{width: '260px', height: '460px', padding: '0', overflow: 'hidden', position: 'relative', borderRadius: '16px'}}>
-              <video 
-                src={src} 
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-                style={{width: '100%', height: '100%', objectFit: 'cover'}}
-              />
+            { src: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85", alt: "Freshly prepared South Indian meal" },
+            { src: "https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=700&q=85", alt: "Golden crispy dosa served fresh" },
+            { src: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85", alt: "Fresh Indian snacks on a plate" },
+            { src: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=700&q=85", alt: "Warm café drink served at the table" }
+          ].map((item) => (
+            <div key={item.src} className="surface-card" style={{width: '260px', height: '360px', padding: '0', overflow: 'hidden', position: 'relative', borderRadius: '16px'}}>
+              <img src={item.src} alt={item.alt} loading="lazy" style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}} />
             </div>
           ))}
         </div>
@@ -146,7 +139,7 @@ const Home = () => {
       </div>
 
       <section className="poster-section" style={{textAlign: 'center', paddingBottom: '120px'}}>
-        <h2 className="text-display" style={{fontSize: 'clamp(50px, 8vw, 100px)', marginBottom: '80px'}}>MUST TRY</h2>
+        <h2 className="text-display" style={{fontSize: 'clamp(50px, 8vw, 100px)', marginBottom: '80px'}}>CAFÉ FAVOURITES</h2>
         
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', alignItems: 'start', marginTop: '80px'}}>
           {[
